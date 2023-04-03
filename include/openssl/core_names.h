@@ -27,6 +27,7 @@ extern "C" {
 #define OSSL_PROV_PARAM_STATUS             "status"              /* uint */
 #define OSSL_PROV_PARAM_SECURITY_CHECKS    "security-checks"     /* uint */
 #define OSSL_PROV_PARAM_TLS1_PRF_EMS_CHECK "tls1-prf-ems-check"  /* uint */
+#define OSSL_PROV_PARAM_DRBG_TRUNC_DIGEST  "drbg-no-trunc-md"    /* uint */
 
 /* Self test callback parameters */
 #define OSSL_PROV_PARAM_SELF_TEST_PHASE  "st-phase" /* utf8_string */
@@ -233,6 +234,12 @@ extern "C" {
 #define OSSL_KDF_PARAM_X942_USE_KEYBITS     "use-keybits"
 #define OSSL_KDF_PARAM_HMACDRBG_ENTROPY     "entropy"
 #define OSSL_KDF_PARAM_HMACDRBG_NONCE       "nonce"
+#define OSSL_KDF_PARAM_THREADS        "threads"     /* uint32_t */
+#define OSSL_KDF_PARAM_EARLY_CLEAN    "early_clean" /* uint32_t */
+#define OSSL_KDF_PARAM_ARGON2_AD      "ad"          /* octet string */
+#define OSSL_KDF_PARAM_ARGON2_LANES   "lanes"       /* uint32_t */
+#define OSSL_KDF_PARAM_ARGON2_MEMCOST "memcost"     /* uint32_t */
+#define OSSL_KDF_PARAM_ARGON2_VERSION "version"     /* uint32_t */
 
 /* Known KDF names */
 #define OSSL_KDF_NAME_HKDF           "HKDF"
